@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>User Registration</h1>
+
+  <form  id="user-registration-form" action="register.php" method="post">
+    <div>
+      <label for="social_title">Social Title:</label>
+      <br>
+      <input type="radio" name="social_title" value="Mr."> Mr.
+      <input type="radio" name="social_title" value="Ms."> Ms.
+      <input type="radio" name="social_title" value="Mrs."> Mrs.
+      <input type="radio" name="social_title" value="Dr."> Dr.
+      <br>
+    </div>
+    <div>
+      <label for="first_name">First Name:</label>
+      <br>
+      <input type="text" id="first_name" name="first_name" required>
+    </div>
+    <div>
+      <label for="last_name">Last Name:</label>
+      <br>
+      <input type="text" id="last_name" name="last_name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <br>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <br>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <label for="birthdate">Birthdate:</label>
+      <br>
+      <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+    <div>
+      <input type="checkbox" id="receive_offers" name="receive_offers">
+      <label for="receive_offers">Receive Offers</label>
+    </div>
+    <div>
+      <label for="neighbourhood">Neighbourhood:</label>
+      <br>
+      <input type="text" id="neighbourhood" name="neighbourhood">
+    </div>
+    <div>
+      <label for="business_info">Business Info:</label>
+      <br>
+      <textarea id="business_info" name="business_info"></textarea>
+    </div>
+    <div>
+      <input type="checkbox" id="is_wholeseller" name="is_wholeseller">
+      <label for="is_wholeseller">Wholesaler</label>
+    </div>
+    <div>
+      <label for="business_address">Business Address:</label>
+      <br>
+      <textarea id="business_address" name="business_address"></textarea>
+    </div>
+    <div>
+      <label for="annual_budget">Annual Budget:</label>
+      <br>
+      <input type="radio" name="annual_budget" value="Less than $10,000"> Less than $10,000
+      <input type="radio" name="annual_budget" value="$10,000 - $50,000">$10,000 - $50,000
+      <input type="radio" name="annual_budget" value="$50,000 - $100,000">$50,000 - $100,000
+      <input type="radio" name="annual_budget" value="More than $100,000">More than $100,000
+    </div>
+  </form>
+
+  <button type="submit" id="submit-btn">Register</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
